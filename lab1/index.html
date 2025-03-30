@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwojaZakładka - księgarnia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TwojaZakładka</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="button login-btn">Zaloguj się</a></li>
+                    <li><a href="#" class="button cart-btn">Koszyk (0)</a></li>
+                    <li><a href="index2.html" class="button add-book-btn">Dodaj nową pozycję</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Wyszukaj książkę</h2>
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="title">Tytuł:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                
+                <div class="form-group">
+                    <label for="author">Autor:</label>
+                    <input type="text" id="author" name="author">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Kategoria:</label>
+                    <select id="category" name="category">
+                        <option value="">Wszystkie</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="kryminal">Kryminał</option>
+                        <option value="romans">Romans</option>
+                        <option value="naukowa">Naukowa</option>
+                        <option value="biografia">Biografia</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="price-min">Cena od:</label>
+                    <input type="number" id="price-min" name="price-min" min="0" step="0.01">
+                    
+                    <label for="price-max">do:</label>
+                    <input type="number" id="price-max" name="price-max" min="0" step="0.01">
+                </div>
+                
+                <button type="submit" class="button search-btn">Szukaj</button>
+            </form>
+        </section>
+
+        <section class="results-section">
+            <h2>Znalezione pozycje (3)</h2>
+            
+            <div class="book-list">
+                <div class="book-card">
+                    <img src="https://picsum.photos/150/200" alt="Okładka książki">
+                    <div class="book-info">
+                        <h3>Wiedźmin: Ostatnie życzenie</h3>
+                        <p class="author">Andrzej Sapkowski</p>
+                        <p class="category">Fantasy</p>
+                        <p class="price">39,99 zł</p>
+                        <button class="button add-to-cart">Dodaj do koszyka</button>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <img src="https://picsum.photos/150/200" alt="Okładka książki">
+                    <div class="book-info">
+                        <h3>Zbrodnia i kara</h3>
+                        <p class="author">Fiodor Dostojewski</p>
+                        <p class="category">Klasyka</p>
+                        <p class="price">29,99 zł</p>
+                        <button class="button add-to-cart">Dodaj do koszyka</button>
+                    </div>
+                </div>
+                
+                <div class="book-card">
+                    <img src="https://picsum.photos/150/200" alt="Okładka książki">
+                    <div class="book-info">
+                        <h3>Solaris</h3>
+                        <p class="author">Stanisław Lem</p>
+                        <p class="category">Science Fiction</p>
+                        <p class="price">34,99 zł</p>
+                        <button class="button add-to-cart">Dodaj do koszyka</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Antoni Duda Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
+</html>
