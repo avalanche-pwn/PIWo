@@ -1,0 +1,71 @@
+.completed {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.list-container {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.list-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-header > span {
+    margin-left: auto;
+    margin-right: .5rem;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task-text {
+    flex-grow: 1;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.completion-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-left: 10px;
+}
+
+.delete-list-btn {
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    color: #dc3545;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.delete-list-btn:hover {
+    color: #a71d2a;
+}
+
+#confirmationModal {
+    display: none;
+}
+
+#listConfirmationModal {
+    display: none;
+}
