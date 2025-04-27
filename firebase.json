@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "lab3/build",
+    "public": "lab3/build/server",
     "ignore": [
       "firebase.json",
       "**/.*",
