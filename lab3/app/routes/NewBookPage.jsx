@@ -30,6 +30,7 @@ export default function NewBookPage() {
           <label className="form-label">Tytuł</label>
           <input
             type="text"
+            name='title'
             className="form-control"
             required
             value={formData.title}
@@ -40,6 +41,7 @@ export default function NewBookPage() {
           <label className="form-label">Autor</label>
           <input
             type="text"
+            name='author'
             className="form-control"
             required
             value={formData.author}
@@ -50,6 +52,7 @@ export default function NewBookPage() {
           <label className="form-label">Rok wydania</label>
           <input
             type="number"
+            name='year'
             className="form-control"
             required
             value={formData.year}
@@ -61,6 +64,7 @@ export default function NewBookPage() {
           <input
             type="number"
             step="0.01"
+            name='price'
             className="form-control"
             required
             value={formData.price}

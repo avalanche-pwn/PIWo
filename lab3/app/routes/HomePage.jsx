@@ -31,6 +31,7 @@ export default function HomePage() {
             <div className="col-md-3">
               <input
                 type="text"
+                name="title"
                 className="form-control"
                 placeholder="Tytuł"
                 value={search.title}
@@ -68,7 +69,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="row">
+      <div className="row" name="books">
         {filteredBooks.map(book => (
           <div className="col-md-6" key={book.id}>
             <Book book={book} />
